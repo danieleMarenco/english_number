@@ -5,7 +5,7 @@ object Main {
     while (true) {
       print("insert a number -> ")
       val a = scala.io.StdIn.readInt()
-      println( "   * " +calculateNumber(a))
+      println("   * " + calculateNumber(a))
     }
   }
 
@@ -53,7 +53,7 @@ object Main {
     //14 -> four + "teen"
     a.toString.map(_.asDigit) match {
       case Seq(_, second) if second == 8 => mainConstants(second) + "een"
-      case Seq(_, second) => mainConstants(second) + "teen"
+      case Seq(_, second)                => mainConstants(second) + "teen"
 
     }
   }
